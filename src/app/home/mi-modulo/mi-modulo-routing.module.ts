@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
-import { EstudiantesComponent } from './mi-modulo/estudiantes/estudiantes.component';
+import { EstudiantesComponent } from './estudiantes/estudiantes.component';
 const routes: Routes = [
   {
     path: '',
@@ -15,7 +15,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    [RouterModule.forChild(routes)]
   ]
 })
 export class MiModuloRoutingModule { }
