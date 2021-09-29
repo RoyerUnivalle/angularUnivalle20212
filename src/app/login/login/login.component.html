@@ -1,3 +1,48 @@
 <p>login works! hola chicos</p>
 
 <router-outlet></router-outlet>
+
+<p><b>Ejemplo Interpolación</b></p>
+
+<p>Texto: {{CampoTexto.value}}</p>
+
+
+Escribe algo: <input type="text" #CampoTexto>
+
+<br>
+<br>
+
+<input type="button" value="Click aqui" (click)="colocarTexto(CampoTexto.value)"/>
+
+<br>
+<br>
+
+<p><b>Otro ejemplo Interpolación</b></p>
+
+<p>Texto: {{CampoTexto2.value}}</p>
+Escribe algo: <input type="text" #CampoTexto2 (keyup)=0>
+
+
+
+<p><b>Ejemplo Property y Event Binding</b></p>
+
+Escribe algo: <input type="text" #CampoTexto3 (keyup)=0 [disabled]="habilitarCuadroTextoProperty">
+<br>
+<br>
+
+
+{{textoDeRegistro}}
+<br>
+Registrado: <input type="radio" value="si" name="nRegistro" id="registro" [checked]="usuarioRegistrado" (click)="SetUsuarioRegistrado($event)" >
+No Registrado:<input type="radio" value="no" name="nRegistro" (click)="SetUsuarioRegistrado($event)" >
+
+{{getRegistroUsuario()}}
+
+
+
+<p><b>Ejemplo two Way Binding</b></p>
+
+
+<p>Empresa: {{Empresa}}</p>
+
+Introduce la empresa: <input type="text" (input)="cambiaEmpresa($event)">
