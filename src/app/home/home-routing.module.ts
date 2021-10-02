@@ -16,6 +16,8 @@ const routes: Routes = [
   },
   { path: 'inicio', component: HomeComponent },
   { path: 'bsc', component: CuadroDeMandoComponent },
+  
+
 
 ];
 

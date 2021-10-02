@@ -6,7 +6,7 @@ const routes: Routes = [
   // { path: 'home', component: HeroesComponent }
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: '',
     pathMatch: 'full'
   },
     {
