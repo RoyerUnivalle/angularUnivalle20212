@@ -1,3 +1,30 @@
 <p>login works! hola chicos</p>
 
+1. Ejemplo interpolacion
+
+<br/>
+<br/>
+
+Digite algo: <input type="text" #escrito (keyup)="0">
+<p>Algo digitado: {{escrito.value}}</p>
+
+<br/>
+
+2. Ejemplo binding
+
+<br/>
+<br/>
+
+¿Que color desea que tenga el texto? (En hexadecimal): <input type="text" #color>
+
+<br/>
+
+<input type="button" value="Cambia el color" #bt (click)="getColor(color.value)">
+
+<br/>
+
+<p>Algo digitado con nuevo color: <span [style.color]="colorletra">{{escrito.value}}</span></p>
+
+<br/>
+
 <router-outlet></router-outlet>
