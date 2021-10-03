@@ -5,5 +5,13 @@
     <span>Estudiantes</span>
 
     <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>    </a>
+    <h1>Datos personales:</h1>
+    <h2>Nombre : {{name}}</h2>
+    <h2>Apellido : {{last_name}}</h2>
+    <h2>Alias : {{aka}}</h2>
+    <h2>Edad : {{edad}}</h2>
+    <h2>Edad en 5 años : {{edad+5}}</h2>
+    <h2>Es mayor de edad : {{edad>18 ? "Si es mayor de edad" : "No es mayor de edad"}}</h2>
+    <h2 [style.color]="colorLetra">Ejemplo Binding</h2>
 
 <router-outlet></router-outlet>

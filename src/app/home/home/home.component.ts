@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  name = "Andrés";
+  last_name = "Jaramillo";
+  aka = "Sr_Pio";
+  edad = 21;
+
+
+  colorLetra = "#2a9d8f"
+
   constructor() { }
 
   ngOnInit() {
