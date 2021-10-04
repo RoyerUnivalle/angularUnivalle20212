@@ -1,0 +1,10 @@
+<h2>{{hero.name | uppercase}} Details</h2>
+<!-- Interpolación: El id de un heroe puede cambiar y mostrarse en pantalla -->
+<div><span>id: </span>{{hero.id}}</div>
+<div>
+  <label for="name">Hero name: </label>
+  <!-- Binding: A medida que escribo en el textbox el nombre del heroe va cambiando -->
+  <input id="name" [(ngModel)]="hero.name" placeholder="name">
+  <br><label for="id">Hero id: </label>
+  <input id="id" [(ngModel)]="hero.id" placeholder="id">
+</div>

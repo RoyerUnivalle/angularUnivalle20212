@@ -3,8 +3,6 @@ import { CommonModule } from '@angular/common';
 import { MiModuloRoutingModule } from '../mi-modulo-routing.module';
 import { EstudiantesComponent } from './estudiantes/estudiantes.component';
 
-
-
 @NgModule({
   declarations: [EstudiantesComponent],
   imports: [
