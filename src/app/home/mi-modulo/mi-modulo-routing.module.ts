@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-
+import { MiModuloComponent } from './mi-modulo/mi-modulo.component';
 import { EstudiantesComponent } from './estudiantes/estudiantes.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: ' ',
-    pathMatch: 'full'
+    component: MiModuloComponent,
+    children: [
+      { path: 'estudiantes', component: EstudiantesComponent },
+    ]
   },
-  { path: 'estudiantes', component: EstudiantesComponent },
 ];
 
 @NgModule({
