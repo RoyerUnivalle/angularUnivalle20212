@@ -1,1 +1,6 @@
 <p>estudiantes works!</p>
+<input type="text" [(ngModule)] = "nombre">
+
+<ul *ngFor="let estudiante of estudiantes; let i = index">
+    <input type="text" (change)="imprimirArray(i)" [(ngModel)]="estudiante.nombre" value={{estudiante.nombre}}>
+</ul>

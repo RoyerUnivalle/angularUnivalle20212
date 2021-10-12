@@ -8,13 +8,9 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'inicio',
-    component: MiModuloModule,
-    children: [
-      {path: "estudiantes", component: EstudiantesComponent},
-    ]
-    //pathMatch: 'full'
+    pathMatch: 'full'
   },
-  //{ path: 'estudiantes', component: EstudiantesComponent},
+  { path: 'estudiantes', component: EstudiantesComponent},
 ];
 
 @NgModule({
